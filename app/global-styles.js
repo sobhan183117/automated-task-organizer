@@ -44,10 +44,27 @@ const GlobalStyle = createGlobalStyle`
     background-color: #f9f9f9;
     border-top: .05rem solid #e5e5e5;
   }
+
   .m-t-10{
     margin-top: 10px;
   }
- 
+
+  .table-action-btn {
+    text-decoration: underline;
+  }
+
+  .table-action-btn: hover {
+    cursor: pointer;
+    color: #1414ef
+    
+    
+    
+    
+    
+    
+    ;
+  }
+
 `;
 
 export default GlobalStyle;

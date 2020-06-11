@@ -18,6 +18,12 @@ createSelector(selectTaskOrganizerMainDomain, substate => substate.get('taskName
 const makeSelectTaskDuration = () =>
 createSelector(selectTaskOrganizerMainDomain, substate => substate.get('taskDuration'));
 
+const makeSelectModalVisibleStatus = () =>
+createSelector(selectTaskOrganizerMainDomain, substate => substate.get('modalVisible'));
+
+const makeSelectTaskList = () =>
+createSelector(selectTaskOrganizerMainDomain, substate => substate.get('taskList'));
+
 /**
  * Default selector used by TaskOrganizerMain
  */
@@ -30,4 +36,6 @@ export {
   selectTaskOrganizerMainDomain,
   makeSelectTaskName,
   makeSelectTaskDuration,
+  makeSelectTaskList,
+  makeSelectModalVisibleStatus,
 };
